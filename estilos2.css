@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffffd5;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(82, 114, 134);
+   
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255); /* sombra clara al texto */
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+     
+}
+
+
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 42%;
+    padding: 10px;
+    border: 0.05px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    border-color: #848686;
+    
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius:25px;
+    cursor: pointer;
+    font-size: 15px;
+    border: none
+    
+}
+
+input[type="submit"]:hover {
+    background-color: #0454aa;
+}
+
+@media screen and (max-width: 600px) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+img {
+    display: block; /* imagen sea un bloque */
+    margin: 0 auto; /* Centra utilizando márgenes automáticos */
+}
+
+.checkbox-group{
+  
+   
+    margin-bottom: 1px;
+    align-items: center;
+    margin-right: 200px;
+}
+

@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px; /* Ajusta el ancho del contenedor según tus necesidades */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffffad;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(171, 173, 175); /* Sombra suave */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #14a6db;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

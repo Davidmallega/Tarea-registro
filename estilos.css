@@ -1,0 +1,89 @@
+img {
+    display: block;
+    margin: 0 auto; /*  imagen horizontalmente */
+   
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    max-width: 300px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.8); /*  la opacidad */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-container {
+    position: relative;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 83%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #60c5d9;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.fa-user,
+.fa-lock {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: #010101;
+}
+
+.btn {
+    background-color: #1096cb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius:20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0574b4;
+}
+
+.login-btn {
+    margin-left: 20px; 
+    margin-top: 5px; 
+}
+
+.success-message {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+.cambiarpass {
+    font-size: 12px; /* la tipografía */
+    padding-left: 5px;
+}
+

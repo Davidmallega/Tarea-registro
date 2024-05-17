@@ -1,0 +1,37 @@
+CREATE DATABASE IF NOT EXISTS tallerMecanico;
+
+USE tallermecanico;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100),
+    password VARCHAR(100),
+
+);
+
+CREATE TABLE IF NOT EXISTS Clientes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100),
+    apellido VARCHAR(100),
+    identificacion VARCHAR(20),
+    direccion VARCHAR(255),
+    telefono VARCHAR(20),
+    correo VARCHAR(100)
+);
+
+CREATE TABLE IF NOT EXISTS Vehiculos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_cliente INT,
+    patente VARCHAR(20),
+    marca VARCHAR(50),
+    modelo VARCHAR(50),
+    año INT,
+    transmision VARCHAR(50),
+    fallas TEXT,
+    FOREIGN KEY (id_cliente) REFERENCES Clientes(id)
+);
+
+agrege 
+
+ALTER TABLE Vehiculos
+ADD tecnico_asignado VARCHAR(100);
